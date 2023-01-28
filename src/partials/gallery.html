@@ -1,0 +1,104 @@
+<section class="section galery" id="gallery">
+  <div class="container">
+    <h2 class="visually-hidden">galery tablle</h2>
+    <div class="galery__slider midle">
+      <a class="slider__before sliderBefore">&#10094;</a>
+      <div class="galery__sliders">
+        <input type="radio" name="r" id="r1" checked />
+        <input type="radio" name="r" id="r2" />
+        <input type="radio" name="r" id="r3" />
+
+        <div class="galery__slide s1">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./image/mobile/gallery.jpg    1x,
+                ./image/mobile/gallery-x2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./image/tablet/galery1.jpg   1x,
+                ./image/tablet/galery1x2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./image/desctop/galery1.jpg   1x,
+                ./image/desctop/galery1x2.jpg 2x
+              "
+            />
+            <img
+              src=".//image/desctop/galery1.jpg"
+              alt=" Мороженко с фруктами"
+            />
+          </picture>
+        </div>
+        <div class="galery__slide">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./image/mobile/galerytest2.jpg 1x,
+                ./image/mobile/galerytest2.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./image/tablet/galerytest2.jpg 1x,
+                ./image/tablet/galerytest2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./image/desctop/galerytest2.jpg 1x,
+                ./image/desctop/galerytest2.jpg 2x
+              "
+            />
+            <img src="./image/desctop/galery2.jpg" alt="Мороженко с шариками" />
+          </picture>
+        </div>
+        <div class="galery__slide">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./image/mobile/galerytest3.jpg 1x,
+                ./image/mobile/galerytest3.jpg 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./image/tablet/galerytest3.jpg 1x,
+                ./image/tablet/galerytest3.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./image/desctop/galerytest3.jpg 1x,
+                ./image/desctop/galerytest3.jpg 2x
+              "
+            />
+            <img
+              src="./image/desctop/galery3.jpg"
+              alt="Мороженко с клубничкой"
+            />
+          </picture>
+        </div>
+      </div>
+      <a class="slider__after sliderAfter">&#10095;</a>
+      <div class="galery__navigation">
+        <label for="r1" data-number="1" class="galery__bar"></label>
+        <label for="r2" data-number="2" class="galery__bar"></label>
+        <label for="r3" data-number="3" class="galery__bar"></label>
+      </div>
+    </div>
+  </div>
+</section>

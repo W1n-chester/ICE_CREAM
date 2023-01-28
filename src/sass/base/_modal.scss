@@ -1,0 +1,306 @@
+:root {
+  // Font families
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
+
+  // Main colors
+  --main-color: #131313;
+  --accent-color: #f8d24e;
+  //   Видалити в кінці
+  //   --t-primary-color: #131313;
+  //   --i-black-color: #131313;
+  --bg-accent-color: #f8d24e;
+
+  // Text colors
+  // --t-accent-color: #2196f3;
+
+  --t-btn-focus-color: #fcfcfc;
+
+  /* Background colors*/
+  --bg-primary-color: #fcfcfc;
+  --bg-modal-black-color: rgba(0, 0, 0, 0.4);
+  --bg-modal-input-color: rgba(248, 210, 78, 0.1);
+  --bg-modal-disabled-color: #ababab;
+
+  // --bg-white-color
+
+  --bg-btn-focus-color: #0a8817;
+  --bg-btn-hover-color: #0a8817;
+  --bg-circle-green-color: #9cbe8f;
+  --bg-circle-yellow-color: #efd478;
+  --bg-circle-coffee-color: #d6936d;
+
+  // Border colors
+
+  --br-modal-input-color: #84a178;
+
+  // Animations
+  --trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// Modal-window - button-sent
+
+// &__modal-sent:focus {
+//   // outline-color: var(--br-accent-color);
+// }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: var(--bg-modal-black-color);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal {
+  width: 280px;
+  background-color: var(--bg-primary-color);
+  border: 2px solid var(--br-modal-color);
+  border-radius: 10px;
+  padding: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 479px) {
+    max-width: 94%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  &__title {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    display: block;
+    text-align: center;
+    color: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    color: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: calc(22 / 16);
+    }
+  }
+}
+
+// Button close
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  outline: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--main-color);
+    transition: fill var(--trans);
+
+    @media screen and (min-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: var(--accent-color);
+  }
+}
+
+// Buttons
+.button {
+  display: flex;
+  padding: 12px 34px;
+  // font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  // Modal-button-submit
+  &__modal-sent {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 34px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: var(--main-color);
+
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: calc(18 / 14);
+    }
+  }
+  &__modal-sent:focus,
+  &__modal-sent:hover {
+    color: var(--t-btn-focus-color);
+    background-color: var(--bg-btn-hover-color);
+    outline: none;
+  }
+}
+
+.register-form {
+  &__group {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__title {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    display: block;
+    text-align: center;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    color: var(--main-color);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      margin-bottom: 24px;
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 32px;
+    background-color: var(--bg-modal-input-color);
+    border: 1px solid var(--br-modal-input-color);
+    border-radius: 10px;
+    // outline: none;
+    padding: 11px 11px;
+    margin-bottom: 12px;
+    transition: border-color var(--trans);
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 368px;
+      height: 42px;
+      padding: 11px 16px;
+      margin-bottom: 16px;
+    }
+  }
+  &__input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+  &__input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(17 / 12);
+    color: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 14px;
+    }
+  }
+  &__input:not(:placeholder-shown):required:valid {
+    border-color: green;
+  }
+  &__input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+  }
+  &__textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    height: 64px;
+    background-color: var(--bg-modal-input-color);
+    border: 1px solid var(--br-modal-input-color);
+    border-radius: 10px;
+    padding: 11px 11px;
+    outline: none;
+    transition: border-color var(--trans);
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 368px;
+      height: 84px;
+      padding: 11px 16px;
+    }
+  }
+  &__textarea:focus {
+    border-color: var(--accent-color);
+  }
+
+  &__textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(17 / 12);
+    color: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  &__textarea:required {
+    border-color: #f44336;
+  }
+}

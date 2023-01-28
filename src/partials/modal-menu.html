@@ -1,0 +1,89 @@
+<div
+  class="menu-container js-menu-container js-menu-container-nav-set"
+  id="mobile-menu"
+>
+  <a class="logo__mobile-menu" href="./index.html">
+    <picture>
+      <source
+        srcset="
+          ./image/hero/tablet/logo/logo-tablet.webp    1x,
+          ./image/hero/tablet/logo/logo-tablet@2x.webp 2x,
+          ./image/hero/tablet/logo/logo-tablet@3x.webp 3x
+        "
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./image/hero/tablet/logo/logo-tablet.png    1x,
+          ./image/hero/tablet/logo/logo-tablet@2x.png 2x,
+          ./image/hero/tablet/logo/logo-tablet@3x.png 3x
+        "
+        type="image/png"
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="
+          ./image/hero/mobile/logo/logo-mobile.webp    1x,
+          ./image/hero/mobile/logo/logo-mobile@2x.webp 2x,
+          ./image/hero/mobile/logo/logo-mobile@3x.webp 3x
+        "
+        type="image/webp"
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ./image/hero/mobile/logo/logo-mobile.png    1x,
+          ./image/hero/mobile/logo/logo-mobile@2x.png 2x,
+          ./image/hero/mobile/logo/logo-mobile@3x.png 3x
+        "
+        type="image/png"
+        media="(max-width: 767px)"
+      />
+
+      <img
+        class="logo__mobile-image"
+        src="./image/hero/mobile/logo/logo-mobile.png"
+        alt="logo"
+        width="41"
+        height="38"
+      />
+    </picture>
+  </a>
+  <button class="menu-container__close-btn js-close-menu" type="button">
+    <svg class="menu-container__close-icon" width="32" height="32">
+      <use href="./image/icons.svg#close-mobile-menu"></use>
+    </svg>
+  </button>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link js-close-menu-home" href="#home">Home</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link js-close-menu-about" href="#about"
+          >How it’s made?</a
+        >
+      </li>
+      <li class="nav__item">
+        <a class="nav__link js-close-menu-products" href="#products"
+          >Our products</a
+        >
+      </li>
+      <li class="nav__item">
+        <a class="nav__link js-close-menu-contacts" href="#contacts">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    class="mobile-menu-btn buy-now-btn"
+    type="button"
+    id="data-modal-buy-open-mobile"
+  >
+    Buy now
+    <svg width="12" height="12">
+      <use href="./image/icons.svg#after-element"></use>
+    </svg>
+  </button>
+</div>

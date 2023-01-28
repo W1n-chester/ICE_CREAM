@@ -1,0 +1,102 @@
+.modal {
+  &__title-location {
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+.modal-location {
+  height: 98%;
+  overflow-y: scroll;
+}
+
+// Maps
+.location {
+  position: relative;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  &__map {
+    width: 224px;
+    height: 199px;
+    // border: none;
+    border-radius: 10px;
+    margin-bottom: 22px;
+
+    @media screen and (max-width: 479px) {
+      max-width: 94%;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 448px;
+      height: 260px;
+      margin-bottom: 32px;
+    }
+  }
+  &__object {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    color: var(--main-color);
+
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: none;
+  }
+  &__city {
+    position: absolute;
+    top: 9%;
+    right: 0%;
+    background-color: inherit;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    color: var(--main-color);
+
+    background-color: var(--bg-primary-color);
+    border-radius: 10px;
+    border: none;
+  }
+}
+.location:last-child {
+  margin-bottom: 0px;
+}
+
+// Button-link Open map
+.btn-link {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  margin-left: auto;
+  margin-right: auto;
+  width: 134px;
+  padding: 12px 0px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  text-decoration: none;
+  color: currentColor;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    width: 145px;
+  }
+}
+.btn-link:focus {
+  color: var(--t-btn-focus-color);
+  background-color: var(--bg-btn-hover-color);
+  outline: none;
+}

@@ -1,0 +1,197 @@
+// Modal and title for ingredients
+.modal-ing {
+  padding: 28px 20px 32px 20px;
+  height: 98%;
+  overflow-y: scroll;
+
+  @media screen and (max-width: 479px) {
+    max-width: 94%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 40px;
+  }
+}
+.modal__title-ingredients {
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  margin-bottom: 22px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+// Modal ingredients
+.ingredients__img-box {
+  position: relative;
+  height: 138px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  margin-bottom: 24px;
+}
+.ingredients__img {
+  clip-path: circle(66px);
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  display: inline-block;
+}
+.circle {
+  border: none;
+  border-radius: 50%;
+  height: 132px;
+  width: 132px;
+}
+.circle-ice-cr {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.circle-ice-cof {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+.circle-milk {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+.ingredients__calories-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.ingredients__calories {
+  position: relative;
+  width: 53px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-end;
+
+  @media screen and (min-width: 768px) {
+    width: 65px;
+  }
+}
+
+.ingredients__number {
+  position: absolute;
+  top: 0%;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(28 / 10);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  color: var(--main-color);
+
+  background-color: var(--bg-circle-green-color);
+  border: 2px solid var(--bg-circle-green-color);
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  padding: 8px 12px;
+  width: 43px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(28 / 12);
+  }
+}
+.ingredients__number-ice {
+  background-color: var(--bg-circle-yellow-color);
+  border: 2px solid var(--bg-circle-yellow-color);
+}
+.ingredients__number-milk {
+  background-color: var(--bg-circle-coffee-color);
+  border: 2px solid var(--bg-circle-coffee-color);
+}
+.ingredients__name {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+
+  border: 2px solid var(--bg-circle-green-color);
+  border-radius: 40px;
+  padding: 50px 16px 6px 16px;
+  width: 53px;
+
+  @media screen and (min-width: 768px) {
+    padding: 59px 16px 12px 16px;
+    width: 65px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
+}
+.ingredients__name-ice {
+  border: 2px solid var(--bg-circle-yellow-color);
+}
+.ingredients__name-milk {
+  border: 2px solid var(--bg-circle-coffee-color);
+}
+
+.ingredients-title {
+  text-align: center;
+  display: block;
+  margin: 0 auto 24px auto;
+}
+
+.ingredients__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+  margin-bottom: 48px;
+}
+.ingredients__list-left {
+  text-align: left;
+}
+.ingredients__list-right {
+  text-align: right;
+}
+.ingredients__item {
+  margin-bottom: 11px;
+}
+.ingredients__item:last-child {
+  margin-bottom: 0px;
+}
+
+.register-form__group-ing {
+  margin-bottom: 32px;
+}
+.register-form__input-ing {
+  height: 42px;
+  margin-bottom: 16px;
+}
+.register-form__textarea-ing {
+  height: 84px;
+}

@@ -1,0 +1,380 @@
+<!-- Modal ingredients -->
+<div class="backdrop is-hidden" data-modal-ing>
+  <div class="modal modal-ing">
+    <button class="button-close" type="button" data-modal-ing-close>
+      <svg class="button-close__icon">
+        <use href="./image/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <strong class="modal__title modal__title-ingredients">
+      Chololate icecream
+    </strong>
+    <div class="ingredients__img-box">
+      <img
+        class="ingredients__img"
+        srcset="
+          ./image/mobile/icecream-1x.jpg 1x,
+          ./image/mobile/icecream-2x.jpg 2x
+        "
+        src="./image/mobile/icecream-1x.jpg"
+        alt="ice-cream"
+        width="170"
+        height="132"
+      />
+      <div class="circle circle-ice-cr"></div>
+    </div>
+    <h2 class="ingredients-title">Ingredients</h2>
+
+    <ul class="ingredients__calories-box">
+      <li class="ingredients__calories">
+        <p class="ingredients__number">320</p>
+        <p class="ingredients__name">kcal</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number">4g</p>
+        <p class="ingredients__name">Prote...</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number">8,2g</p>
+        <p class="ingredients__name">Fats</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number">40,4g</p>
+        <p class="ingredients__name">Carbs</p>
+      </li>
+    </ul>
+
+    <ul class="ingredients__list">
+      <li>
+        <ul class="ingredients__list-left">
+          <li class="ingredients__item">
+            <p>Milk</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Belgian chocolate</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Cream</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Cocoa powder</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Sugar</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Vanilla sugar</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="ingredients__list-right">
+          <li class="ingredients__item">
+            <p>100ml</p>
+          </li>
+          <li class="ingredients__item">
+            <p>20g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>150 ml</p>
+          </li>
+          <li class="ingredients__item">
+            <p>30g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>40g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>10g</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <form class="register-form" name="register-form">
+      <div class="register-form__group register-form__group-ing" role="group">
+        <input
+          class="register-form__input register-form__input-ing"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+        <input
+          class="register-form__input register-form__input-ing"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          minlength="13"
+          maxlength="13"
+          title="Phone must be 000-000-00-00"
+        />
+        <textarea
+          class="register-form__textarea register-form__textarea-ing"
+          name="comment"
+          cols="10"
+          rows="10"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="button button__modal-sent" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Ice coffee ingredients -->
+<div class="backdrop is-hidden" data-modal-ing-ice>
+  <div class="modal modal-ing">
+    <button class="button-close" type="button" data-modal-ing-ice-close>
+      <svg class="button-close__icon">
+        <use href="./image/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <strong class="modal__title modal__title-ingredients"> Ice coffee </strong>
+    <div class="ingredients__img-box">
+      <img
+        class="ingredients__img"
+        srcset="
+          ./image/mobile/ice-coffee-1x.jpg 1x,
+          ./image/mobile/ice-coffee-2x.jpg 2x
+        "
+        src="./image/mobile/ice-coffee-1x.jpg"
+        alt="ice-cream"
+        width="202"
+        height="132"
+      />
+      <div class="circle circle-ice-cof"></div>
+    </div>
+    <h2 class="ingredients-title">Ingredients</h2>
+
+    <ul class="ingredients__calories-box">
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-ice">65</p>
+        <p class="ingredients__name ingredients__name-ice">kcal</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-ice">4g</p>
+        <p class="ingredients__name ingredients__name-ice">Prote...</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-ice">6g</p>
+        <p class="ingredients__name ingredients__name-ice">Fats</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-ice">35g</p>
+        <p class="ingredients__name ingredients__name-ice">Carbs</p>
+      </li>
+    </ul>
+
+    <ul class="ingredients__list">
+      <li>
+        <ul class="ingredients__list-left">
+          <li class="ingredients__item">
+            <p>Water</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Black coffee</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Cinnamon</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Thick cream</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Ice</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Sugar</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="ingredients__list-right">
+          <li class="ingredients__item">
+            <p>100ml</p>
+          </li>
+          <li class="ingredients__item">
+            <p>7g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>1st</p>
+          </li>
+          <li class="ingredients__item">
+            <p>35g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>5cub</p>
+          </li>
+          <li class="ingredients__item">
+            <p>5g</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <form class="register-form" name="register-form">
+      <div class="register-form__group" role="group">
+        <input
+          class="register-form__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+        <input
+          class="register-form__input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          minlength="13"
+          maxlength="13"
+          title="Phone must be 000-000-00-00"
+        />
+        <textarea
+          class="register-form__textarea"
+          name="comment"
+          cols="10"
+          rows="10"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="button button__modal-sent" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Milkshakes ingredients -->
+<div class="backdrop is-hidden" data-modal-ing-milk>
+  <div class="modal modal-ing">
+    <button class="button-close" type="button" data-modal-ing-milk-close>
+      <svg class="button-close__icon">
+        <use href="./image/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <strong class="modal__title modal__title-ingredients"> Ice coffee </strong>
+    <div class="ingredients__img-box">
+      <img
+        class="ingredients__img"
+        srcset="
+          ./image/mobile/milkshake-1x.jpg 1x,
+          ./image/mobile/milkshake-2x.jpg 2x
+        "
+        src="./image/mobile/milkshake-1x.jpg"
+        alt="ice-cream"
+        width="186"
+        height="132"
+      />
+      <div class="circle circle-milk"></div>
+    </div>
+    <h2 class="ingredients-title">Ingredients</h2>
+
+    <ul class="ingredients__calories-box">
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-milk">119</p>
+        <p class="ingredients__name ingredients__name-milk">kcal</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-milk">4g</p>
+        <p class="ingredients__name ingredients__name-milk">Prote...</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-milk">4g</p>
+        <p class="ingredients__name ingredients__name-milk">Fats</p>
+      </li>
+      <li class="ingredients__calories">
+        <p class="ingredients__number ingredients__number-milk">175g</p>
+        <p class="ingredients__name ingredients__name-milk">Carbs</p>
+      </li>
+    </ul>
+
+    <ul class="ingredients__list">
+      <li>
+        <ul class="ingredients__list-left">
+          <li class="ingredients__item">
+            <p>Ice cream</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Milk</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Black chocolate</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Chocolate syrup</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Cream</p>
+          </li>
+          <li class="ingredients__item">
+            <p>Sugar</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="ingredients__list-right">
+          <li class="ingredients__item">
+            <p>200ml</p>
+          </li>
+          <li class="ingredients__item">
+            <p>80ml</p>
+          </li>
+          <li class="ingredients__item">
+            <p>10g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>20g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>25g</p>
+          </li>
+          <li class="ingredients__item">
+            <p>20g</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <form class="register-form" name="register-form">
+      <div class="register-form__group" role="group">
+        <input
+          class="register-form__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+        <input
+          class="register-form__input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          minlength="13"
+          maxlength="13"
+          title="Phone must be 000-000-00-00"
+        />
+        <textarea
+          class="register-form__textarea"
+          name="comment"
+          cols="10"
+          rows="10"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="button button__modal-sent" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="./js/modal-ing.js"></script>
+<script src="./js/modal-ing-ice.js"></script>
+<script src="./js/modal-ing-milk.js"></script>

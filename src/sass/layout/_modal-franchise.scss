@@ -1,0 +1,14 @@
+.modal {
+  &__title-franchise {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
+  &__text-fran {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+}
